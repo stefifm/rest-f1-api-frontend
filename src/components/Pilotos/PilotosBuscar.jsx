@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form'
 import './pilotosBuscar.css'
 import Container from 'react-bootstrap/Container'
 
-const PilotosBuscar = () => {
+function PilotosBuscar() {
   const { NombrePiloto, setNombrePiloto, Campeon, setCampeon, buscarPilotos, agregarPiloto } =
     useContext(F1Context)
 

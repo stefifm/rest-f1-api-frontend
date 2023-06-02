@@ -2,7 +2,9 @@ import { createContext, useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { getEquipos } from '../api/equipos-server'
 import { getPilotos, getPiloto, createUpdatePiloto, deletePiloto } from '../api/pilotos-service'
+import { modalDialogService } from '../services/modal-dialog-service'
 import moment from 'moment'
+import Swal from 'sweetalert2'
 
 export const F1Context = createContext()
 
@@ -42,8 +44,9 @@ export const F1ContextProvider = ({ children }) => {
     } else {
       _pagina = Pagina
     }
-
+    modalDialogService.BloquearPantalla(true)
     const data = await getPilotos(NombrePiloto, Campeon, _pagina)
+    modalDialogService.BloquearPantalla(false)
     setPilotos(data.Items)
     setRegistrosTotal(data.RegistrosTotal)
 
@@ -92,17 +95,33 @@ export const F1ContextProvider = ({ children }) => {
   const grabarPiloto = async (item) => {
     try {
       await createUpdatePiloto(item)
-      await buscarPilotos()
-      volver()
+      Swal.fire({
+        title: 'Éxito!',
+        text: 'Registro grabado correctamente',
+        icon: 'success',
+        confirmButtonText: 'Ok'
+      })
     } catch (error) {
-      window.alert(error?.response?.data?.message ?? error.toString())
+      modalDialogService.Alert(error?.response?.data?.message ?? error.toString())
     }
+    await buscarPilotos()
+    volver()
   }
 
   // Funcion para eliminar un piloto
   const deletePilotoById = async (item) => {
-    await deletePiloto(item)
-    await buscarPilotos()
+    const res = await Swal.fire({
+      title: 'Atención!',
+      text: '¿Seguro desea eliminar el registro?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Si',
+      cancelButtonText: 'No'
+    })
+    if (res.isConfirmed) {
+      await deletePiloto(item)
+      await buscarPilotos()
+    }
   }
 
   const volver = () => {

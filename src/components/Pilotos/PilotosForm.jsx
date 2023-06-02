@@ -4,7 +4,8 @@ import Form from 'react-bootstrap/esm/Form'
 import Button from 'react-bootstrap/esm/Button'
 import { useForm } from 'react-hook-form'
 import './pilotosFormulario.css'
-const PilotosForm = () => {
+
+function PilotosForm() {
   const { equipos, AccionABMC, piloto, grabarPiloto, volver } = useContext(F1Context)
 
   const {

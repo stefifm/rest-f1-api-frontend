@@ -7,6 +7,11 @@
   margin: 0 auto;
 }
 
+.form-registro input, .form-registro select {
+  border: 1px solid #005792;
+  padding: 0.7rem;
+}
+
 .btn-save {
   background: #005792;
   border: 1px solid #005792;

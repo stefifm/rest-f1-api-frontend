@@ -1,6 +1,6 @@
 import './footer.css'
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className='text-center'>
       <span className='titulo-copy'>@ F1 API</span>

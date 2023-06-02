@@ -3,7 +3,8 @@ import { F1Context } from '../../Context/Context'
 import moment from 'moment'
 import Table from 'react-bootstrap/Table'
 import './pilotosLista.css'
-const PilotosListados = () => {
+
+function PilotosListados() {
   const {
     pilotos,
     Pagina,

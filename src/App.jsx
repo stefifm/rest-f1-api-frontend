@@ -6,11 +6,13 @@ import Footer from './components/Footer/Footer'
 import Home from './Pages/Home'
 import PilotosPages from './Pages/PilotosPages'
 import EquiposPages from './Pages/EquiposPages'
+import ModalDialog from './components/ModalDialog/ModalDialog'
 import './App.css'
 
 function App() {
   return (
     <BrowserRouter>
+      <ModalDialog />
       <Header />
       <div className='divBody'>
         <Routes>

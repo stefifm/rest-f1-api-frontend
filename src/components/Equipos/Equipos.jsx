@@ -2,7 +2,9 @@ import { useContext } from 'react'
 import { F1Context } from '../../Context/Context'
 import Table from 'react-bootstrap/Table'
 import './equipos.css'
-const Equipos = () => {
+import Swal from 'sweetalert2'
+
+function Equipos() {
   const { equipos } = useContext(F1Context)
   return (
     <Table

@@ -20,9 +20,8 @@ label {
 
 input {
   text-transform: uppercase;
-  /* margin-bottom: 0.2em;  */
-  /*separa renglones*/
 }
+
 ::placeholder {
   text-transform: none;
 }
