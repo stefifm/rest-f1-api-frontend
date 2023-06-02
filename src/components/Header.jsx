@@ -14,7 +14,9 @@ function Header() {
           <Navbar.Brand
             as={NavLink}
             to='/'>
-            F1-API
+            <i className='fa fa-flag-checkered'></i>
+            &nbsp;
+            <i>F1 API</i>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
