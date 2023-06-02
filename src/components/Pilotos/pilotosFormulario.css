@@ -1,0 +1,57 @@
+.form-registro {
+  background: #e7eaf6;
+  border-radius: 2rem;
+  box-shadow: 5px 10px 10px 5px #005792;
+  padding: 2rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.btn-save {
+  background: #005792;
+  border: 1px solid #005792;
+  border-radius: 2rem;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-save:hover {
+  background: #ffffff;
+  color: #005792;
+}
+
+.btn-cancel {
+  background: #dc2f2f;
+  border: 1px solid #dc2f2f;
+  border-radius: 2rem;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cancel:hover {
+  background: #ffffff;
+  color: #dc2f2f;
+  border: 1px solid #dc2f2f;
+}
+
+.botones-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .botones-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+}

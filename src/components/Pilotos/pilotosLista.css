@@ -1,0 +1,16 @@
+.tabla-pilotos {
+  background: #e7eaf6;
+  border: 1px solid #005792;
+}
+
+.botones-accion {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .botones-accion{
+    flex-direction: column;
+  }
+}
