@@ -82,7 +82,7 @@ export const F1ContextProvider = ({ children }) => {
       NombrePiloto: null,
       IdEquipoF1: 0,
       FechaNacimiento: moment(new Date()).format('YYYY-MM-DD'),
-      Campeon: false
+      Campeon: null
     })
     setAccionABMC('A')
   }

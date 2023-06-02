@@ -121,11 +121,17 @@ const PilotosForm = () => {
           <Form.Label>
             Campeón <span className='text-danger'>*</span>
           </Form.Label>
-          <Form.Select {...register('Campeon')}>
-            <option value=''></option>
+          <Form.Select
+            {...register('Campeon', {
+              required: { value: true, message: 'Campeon es requerido' }
+            })}>
+            <option value={null}></option>
             <option value={true}>SI</option>
             <option value={false}>NO</option>
           </Form.Select>
+          {errors.Campeon && (
+            <Form.Text className='text-danger'>{errors.Campeon.message}</Form.Text>
+          )}
         </Form.Group>
       </fieldset>
 
