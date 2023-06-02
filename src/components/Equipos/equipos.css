@@ -4,3 +4,8 @@
   width: 80%;
   margin: 0 auto;
 }
+
+.tabla-equipos th {
+  background: #005792;
+  color: #ffffff;
+}

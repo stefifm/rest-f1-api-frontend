@@ -9,6 +9,11 @@
   justify-content: center;
 }
 
+.tabla-pilotos th {
+  background: #005792;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
   .botones-accion{
     flex-direction: column;

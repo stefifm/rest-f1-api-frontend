@@ -13,8 +13,8 @@ const Equipos = () => {
       className='tabla-equipos'>
       <thead>
         <tr>
-          <th style={{ background: '#005792', color: '#ffffff' }}>IdEquipoF1</th>
-          <th style={{ background: '#005792', color: '#ffffff' }}>NombreEquipo</th>
+          <th>IdEquipoF1</th>
+          <th>NombreEquipo</th>
         </tr>
       </thead>
       <tbody>

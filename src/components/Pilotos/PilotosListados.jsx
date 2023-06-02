@@ -24,12 +24,12 @@ const PilotosListados = () => {
         className='tabla-pilotos text-center'>
         <thead>
           <tr>
-            <th style={{ background: '#005792', color: '#ffffff' }}>IdPiloto</th>
-            <th style={{ background: '#005792', color: '#ffffff' }}>NombrePiloto</th>
-            <th style={{ background: '#005792', color: '#ffffff' }}>FechaNacimiento</th>
-            <th style={{ background: '#005792', color: '#ffffff' }}>CantidadCarreras</th>
-            <th style={{ background: '#005792', color: '#ffffff' }}>Campeon</th>
-            <th style={{ background: '#005792', color: '#ffffff' }}>Acciones</th>
+            <th>IdPiloto</th>
+            <th>NombrePiloto</th>
+            <th>FechaNacimiento</th>
+            <th>CantidadCarreras</th>
+            <th>Campeon</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
