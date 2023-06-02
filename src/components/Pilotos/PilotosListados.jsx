@@ -45,17 +45,20 @@ function PilotosListados() {
                 <td className='botones-accion'>
                   <button
                     className='btn btn-sm btn-outline-primary boton-accion'
-                    onClick={() => consultarPiloto(item)}>
+                    onClick={() => consultarPiloto(item)}
+                    title='Consultar'>
                     <i className='fa fa-eye'></i>
                   </button>
                   <button
                     className='btn btn-sm btn-outline-primary boton-accion'
-                    onClick={() => modificarPiloto(item)}>
+                    onClick={() => modificarPiloto(item)}
+                    title='Modificar'>
                     <i className='fa fa-pencil'></i>
                   </button>
                   <button
                     className='btn btn-sm btn-outline-danger boton-accion'
-                    onClick={() => deletePilotoById(item)}>
+                    onClick={() => deletePilotoById(item)}
+                    title='Eliminar'>
                     <i className='fa fa-trash'></i>
                   </button>
                 </td>
