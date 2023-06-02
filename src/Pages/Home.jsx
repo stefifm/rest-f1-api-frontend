@@ -14,10 +14,10 @@ function Home() {
       </p>
       <p>Frontend: Single Page Application, HTML, CSS, Bootstrap, NodeJS, JavaScript y React</p>
       <Link
-        to='/pilotos'
+        to='/equipos'
         className='btn btn-lg btn-primary'>
         <i className='fa fa-search pe-2'></i>
-        Ver Pilotos
+        Ver Equipos
       </Link>
     </section>
   )
