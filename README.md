@@ -14,6 +14,7 @@ La API fue publicada en Render.
 - Context API
 - React
 - React Hooks
+- Componente Loader: https://uiverse.io/aadium/purple-panda-57
 
 ## Video demostración
 
