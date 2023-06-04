@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Header'
@@ -27,6 +27,15 @@ function App() {
           <Route
             path='/pilotos'
             element={<PilotosPages />}
+          />
+          <Route
+            path='*'
+            element={
+              <Navigate
+                to='/'
+                replace
+              />
+            }
           />
         </Routes>
       </div>
