@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { getEquipos } from '../api/equipos-server'
 import { getPilotos, getPiloto, createUpdatePiloto, deletePiloto } from '../api/pilotos-service'
 import { modalDialogService } from '../services/modal-dialog-service'
-import moment from 'moment'
 import Swal from 'sweetalert2'
 
 export const F1Context = createContext()
@@ -83,8 +82,8 @@ export const F1ContextProvider = ({ children }) => {
     setPiloto({
       IdPiloto: 0,
       NombrePiloto: null,
-      IdEquipoF1: 0,
-      FechaNacimiento: moment(new Date()).format('YYYY-MM-DD'),
+      IdEquipoF1: null,
+      FechaNacimiento: null,
       Campeon: null
     })
     setAccionABMC('A')
