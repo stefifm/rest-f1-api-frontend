@@ -10,6 +10,10 @@ function PilotosPages() {
 
   return (
     <>
+      <div className='tituloPagina'>
+        Pilotos <small>{TituloAccionABMC[AccionABMC]}</small>
+      </div>
+
       {AccionABMC === 'L' && <PilotosBuscar />}
       {AccionABMC === 'L' && pilotos?.length > 0 && <PilotosListados />}
       {AccionABMC === 'L' && pilotos?.length === 0 && (

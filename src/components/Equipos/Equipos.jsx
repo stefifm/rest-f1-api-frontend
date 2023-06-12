@@ -2,9 +2,9 @@ import { useContext } from 'react'
 import { F1Context } from '../../Context/Context'
 import Table from 'react-bootstrap/Table'
 import './equipos.css'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Loader from '../Loader/Loader'
 function Equipos() {
+  const tituloPagina = 'Equipos de F1'
   const { equipos } = useContext(F1Context)
   return (
     <>
@@ -14,6 +14,7 @@ function Equipos() {
         </>
       ) : (
         <>
+          <h1 className='tituloPagina'>{tituloPagina}</h1>
           <Table
             striped
             bordered
